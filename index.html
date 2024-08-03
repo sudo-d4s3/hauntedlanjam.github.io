@@ -1,132 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haunted LAN Jam 2024</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        .header {
-            background: #282c34;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        .hook {
-            background: url('hook-bg.jpg') no-repeat center center/cover;
-            text-align: center;
-            padding: 100px 20px;
-        }
-		.hook h2 {
-			display: inline-block;
-		}
-		.hook a {
-			display: inline-block;
-			font-size: 2em;
-		}
-        .section {
-            padding: 40px 20px;
-        }
-        .section h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        .section p {
-            font-size: 1.2em;
-        }
-        .schedule-item {
-            margin-bottom: 20px;
-        }
-        .footer {
-            background: #282c34;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Haunted LAN Jam 2024</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <h1>Conway's Haunted LAN Jam 2024!</h1>
-    </header>
+	<div class="container">
+		<div class="hamburger-menu">
+			<div class="line line1"></div>
+			<div class="line line2"></div>
+			<div class="line line3"></div>
+		</div>
+		<header class="header">
+			<div class="img-wrapper">
+				<img src="images/1102367.jpg" alt="bg header">
+			</div>
+			<div class="banner">
+			<h1>Conway's Haunted LAN Jam 2024!</h1>
+			<p title="We encourage you to bring ghosthunting equipment to check!">The ONLY lan party where you can blame it on ghosts instead of lag!</p>
+			<button onclick="window.location.href='#About'">Learn More</button>
+			</div> 
+		</header>
+		<section class="sidebar">
+			<ul class="menu">
+				<li class="menu-item">
+					<a href="#" class="menu-link" data-content="Home">Home</a>
+				</li>
+				<li class="menu-item">
+					<a href="#About" class="menu-link" data-content="About Us">About Us</a>
+				</li>
+				<li class="menu-item">
+					<a href="#" class="menu-link" data-content="Team">Team</a>
+				</li>
+				<li class="menu-item">
+					<a href="#" class="menu-link" data-content="Pricing">Pricing</a>
+				</li>
+				<li class="menu-item">
+					<a href="#" class="menu-link" data-content="Contact">Contact</a>
+				</li>
+			</ul>
+			<div class="social-media">
+				<a href=""><i class="fab fa-facebook-f"></i></a>
+				<a href=""><i class="fab fa-instagram"></i></a>
+				<a href=""><i class="fab fa-twitter"></i></a>
+			</div>
+		</section>
 
-    <section class="hook">
-		<h2 title="We don't actually know if it's haunted but we encourage you to bring ghosthunting equipment to check!">Conway's ONLY Haunted LAN Party!</h2><a style="text-decoration: none;" href="#haunted">*</a>
-        <p>Day full of Spook, Games, and Fun!</p>
-        <a href="#about" style="font-size: 1em; color: #61dafb; text-decoration: none; font-weight: bold;">Learn More</a>
-    </section>
+		<section class="info-pumpkins" id="About">
+			<div class="section-header">
+				<h1 class="section-heading">ABOUT</h1>
+				<div class="underline"></div>
+			</div>
+			<div class="pumpkins">
+				<div class="pumpkin">
+					<div class="pumpkin-header">
+						<i class="fas fa-ghost"></i>
+						<h3>What is the Haunted LAN Jam?</h3>
+					</div>
+					<p class="pumpkin-text" title="Speaking of hackers see if you can find the secret modal on this site">The Haunted LAN Jam is an independent LAN Party put on by local gamers, hackers, and game jammers. The goal is not only to connect the community but also a way to show off demos and homebrew games on top of playing some video games.</p>
+				</div>
+				<div class="pumpkin">
+					<div class="pumpkin-header">
+						<i class="fas fa-ghost"></i>
+						<h3>What is a LAN Party?</h3>
+					</div>
+					<p class="pumpkin-text">A LAN party is a party where a bunch of gamers play games in the same room on the same network.</p>
+				</div>
+				<div class="pumpkin">
+					<div class="pumpkin-header">
+						<i class="fas fa-ghost"></i>
+						<h3>What Games Will Be Played?</h3>
+					</div>
+					<p class="pumpkin-text">Thats up to you and the other players!</p>
+					<p class="pumpkin-text">To help facilitate we will be running:</p>
+					<ul class="pumpkin-list">
+						<li>A cache server with a handful of games pre-cached</li>
+						<li>A file server with freeware games and other goodies</li>
+						<li>Dedicated Game Servers</li>
+					<p class="pumpkin-text">You can learn more below.</p>
+					</ul>
+				</div>
+				<div class="pumpkin">
+					<div class="pumpkin-header">
+						<i class="fas fa-ghost"></i>
+						<h3>What Is A Demo?</h3>
+					</div>
+					<p class="pumpkin-text">A Demo is a very small audio/visual computer art project.</p>
+					<p class="pumpkin-text">There are different catagories for demos such as (but not limited to) 4k intros, where the program is only 4 kilobytes, and 64k intros, where the program is only 64 kilobytes.</p>
+				</div>
+				<div class="pumpkin">
+					<div class="pumpkin-header">
+						<i class="fas fa-ghost"></i>
+						<h3>What Is A GameJam?</h3>
+					</div>
+					<p class="pumpkin-text">A Game Jam is an event where a bunch of game developers get together and make a game.</p>
+					<br />
+					<p class="pumpkin-text">This can be either a competition or collaboration. We tend to like a combination of the two.</p>
+				</div>
+				<div class="pumpkin">
+					<div class="pumpkin-header">
+						<i class="fas fa-ghost"></i>
+						<h3>Event Details:</h3>
+					</div>
+					<p class="pumpkin-text"><b>Date:</b> 2024/11/2 (tentative)</p>
+					<p class="pumpkin-text"><b>Location:</b> TBD</p>
+					<p class="pumpkin-text"><b>Time:</b> TBD</p>
+				</div>
+				<div class="img-wrapper-info-pumpkins">
+					<img src="images/pumpkin.png" alt="pumpkin-image">
+				</div>
+			</div>
+		</section>
+		<section class="hunter-team">
+			<div class="section-header">
+				<h1 class="section-heading" id="servers">Servers We'll Be Running</h1>
+				<div class="underline"></div>
+			</div>
+			<div class="cards-wrapper">
+			<div class="card">
+				<div class="card-img-wrapper">
+					<img src="images/sniper.jpg" alt="sniper">
+				</div>
+				<div class="card-info">
+					<h2>Cache</h2>
+					<h3>Server</h3>
+					<p>When you try and download a game through steam this server will download it on your behalf and then send it to you and anyone else who tries to download the game at lan speeds.</p>
+					<p>This should help prevent us from thrashing our host's network.</p>
+					<button><a href="#open-cache-modal">List Games</a></button>
 
-	<section class="section" id="about">
-		<h2>What is the Haunted LAN Jam?</h2>
-		<p>The Haunted LAN Jam is an independent LAN Party put on by local gamers, hackers, and game jammers. The goal is not only to connect the community but also a way to show off demos and homebrew games on top of playing some video games.</p>
-	</section>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-img-wrapper">
+					<img src="images/ninja.jpg" alt="sniper">
+				</div>
+				<div class="card-info">
+					<h2>File</h2>
+					<h3>Server</h3>
+					<p>We figure this isn't the year of the Linux desktop (sadly) so we are running an SMB file server for maximum compatibility with Windows machines.</p>
+					<p>This will have a bunch of freeware games that we won't get in trouble for distributing.</p>
+					<button><a href="#open-file-modal">List Games</a></button>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-img-wrapper">
+					<img src="images/minigun.png" alt="sniper">
+				</div>
+				<div class="card-info">
+					<h2>Game</h2>
+					<h3>Servers</h3>
+					<p>We have chosen Pelican to be our game panel of choice this year.</p>
+					<p>This will let us monitor server health and kill/rebuild servers quickly if needed.</p>
+					<button><a href="#open-game-modal">List Games</a></button>
+				</div>
+			</div>
+			</div>
+		</section>
+		<section class="modal">
+			<div class="modal-window" id="open-cache-modal">
+				<div>
+					<a href="#servers" title="Close" class="modal-close">Close</a>
+					<h1>Cache Server</h1>
+					<h2>Games We'll have on this server:</h2>
+					<ul>
+						<li><p>Left 4 Dead 2</p></li>
+						<li><p>DOOM 2016</p></li>
+						<li><p>Gauntlet</p></li>
+						<li><p>Lethal Company</p></li>
+						<li><p>GMod</p></li>
+						<li><p>Pummel Party</p></li>
+						<li><p>More Coming SOON&#8482;</p></li>
+					</ul>
+				</div>
+			</div>
+			<div class="modal-window" id="open-file-modal">
+				<div>
+					<a href="#servers" title="Close" class="modal-close">Close</a>
+					<h1>File Server</h1>
+					<h2>Games We'll have on this server:</h2>
+					<ul>
+						<li><p>Alien Arena</p></li>
+						<li><p>Savage XR</p></li>
+						<li><p>Bloodborn PSX</p></li>
+						<li><p>Shipwrecked 64</p></li>
+						<li><p>Artemis Spaceship Bridge Simulator</p></li>
+						<li><p>More Coming SOON&#8482;</p></li>
+					</ul>
+				</div>
+			</div>
+			<div class="modal-window" id="open-game-modal">
+				<div>
+					<a href="#servers" title="Close" class="modal-close">Close</a>
+					<h1>Game Server</h1>
+					<h2>Games We'll have on this server:</h2>
+					<ul>
+						<li><p>Minecraft</p></li>
+						<li><p>Multiple Different GMod Gamemodes</p></li>
+						<li><p>Savage XR</p></li>
+						<li><p>Alien Arena</p></li>
+						<li><p>More Coming SOON&#8482;</p></li>
+					</ul>
+				</div>
+			</div>
+			<div class="modal-window" id="open-secret-modal">
+				<div>
+					<a href="#" title="Close" class="modal-close">Close</a>
+					<h1>Special Consoles</h1>
+					<h2>We will have a few modded consoles with homebrew games:</h2>
+					<ul>
+						<li><p>N64 with a flashcart</p></li>
+						<li><p>G1ATA modded Dreamcast</p></li>
+						<li><p title="IF I CAN EVER FINISH IT!!!">A ~haunted~ PS1</p></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="contact">
+			<div class="contact-wrapper">
+				<div class="contact-left"></div>
+				<div class="contact-right">
+					<h1 class="contact-heading">Contact Us!</h1>
+					<p style="font-size: 200%">If you have any questions, comments, concerns or you have a game you want us to add to the cache or file server let us know at <a href="mailto:hauntedlanjam@d4s3.xyz">hauntedlanjam@d4s3.xyz</a></p>
+				</div>
+			</div>
+		</section>
+	</div>
 
-    <section id="details" class="section">
-        <h2>Event Details</h2>
-        <p>Date: TBD</p>
-        <p>Location: TBD</p>
-        <p>Time: TBD</p>
-    </section>
-
-    <section id="faq" class="section">
-        <h2>Frequently Asked Questions</h2>
-		<h3>What is a LAN Party?</h3>
-        <p>A LAN party is a party where a bunch of gamers play games in the same room on the same network.</p>
-		<br/>
-		<h3>What is a Game Jam?</h3>
-        <p>A Game Jam is an event where a bunch of game developers get together and make a game.</p>
-		<p>It's usually a competition but sometimes it's a collaborative event.</p>
-		<br/>
-		<h3>What is a Demo?</h3>
-        <p>A Demo is a very small audio/visual computer art project.</p>
-		<p>There are different catagories for demos such as (but not limited to) 4k intros, where the program is only 4 kilobytes, and 64k intros, where the program is only 64 kilobytes.</p>
-		<br/>
-		<h3>What Games will be played at the party?</h3>
-		<p>Since it's a Halloween themed LAN party we encourage Halloween-y games. However we will also have non-Halloween-y games.</p>
-		<p>Our caching server will have the following games:</p>
-		<ul>
-			<li>Left 4 Dead 2</li>
-			<li>DOOM 2016</li>
-			<li>Gauntlet</li>
-			<li>More Coming SOON&#8482;</li>
-		</ul>
-		<p>Our file server will have the following games:</p>
-		<ul>
-			<li>Alien Arena</li>
-			<li>Savage XR</li>
-			<li>Bloodborne PSX</li>
-			<li>Shipwrecked 64</li>
-			<li>More Coming SOON&#8482;</li>
-		</ul>
-		<p>We will also have:</p>
-		<ul>
-			<li>A Nintendo 64 with a flashcart full of homebrew games and custom Mario Party maps.</li>
-			<li>A Dreamcast with a g1ata mod full of homebrew games.</li>
-			<li title="What is a Haunted PS1? Only one way to find out!">A ~Haunted~ Playstation 1</li>
-		</ul>
-		<br />
-		<h3>Will there be a Game Jam this year?</h3>
-		<p>Officially: Not this year.</p>
-		<p>However, if you and a group want to have an unofficial Game Jam at the LAN you're more than welcome too!</p>
-		<br />
-		<h3>Hackers will be here? Will we be safe?</h3>
-		<p>Yes there will be hackers and yes you and your electronics will be safe.</p>
-		<p>Most hackers aren't criminals. A hacker is simply someone who makes a computer do something it wasn't designed to do.</p>
-    </section>
-
-	<section class="section">
-		<h3>Contact Us!</h3>
-		<p>If you have any questions, comments, concerns or you have a game you want us to add to the cache or file server let us know at <a href="mailto:hauntedlanjam@d4s3.xyz">hauntedlanjam@d4s3.xyz</a></p>
-	</section>
-
-    <footer class="footer">
-        <p>&copy; CC BY-NC-SA 4.0 Haunted LAN Jam 2024 </p>
-    </footer>
+	<a href="#" class="scroll-btn">
+		<span style='transform: scale(-1,1)'>&#x2934;</span>
+	</a>
+	<script src="script.js"></script> 
 </body>
 </html>
-
